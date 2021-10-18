@@ -14,7 +14,7 @@ autoscaling:
   targetCPUUtilizationPercentage: 50
 
 service:
-  type: clusterIP
+  type: ClusterIP
   port: 3000
   #loadBalancerIP:
 
