@@ -32,13 +32,14 @@ securityContext:
   runAsGroup: 1000
   fsGroup: 1000
 
-# See https://github.com/helm/charts/tree/master/stable/postgresql
+# See https://github.com/bitnami/charts/tree/master/bitnami/postgresql
 postgresql:
+  enabled: true
   postgresqlUsername: kemal
   postgresqlPassword: kemal
   postgresqlDatabase: invidious
-  initdbUsername: kemal
-  initdbPassword: kemal
+  initdbUser: kemal
+  initdbPass: kemal
   initdbScriptsConfigMap: invidious-postgresql-init
 
 # Adapted from ../config/config.yml
